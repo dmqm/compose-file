@@ -1,0 +1,12 @@
+rabbit1:
+  image: rabbitmq:management
+  hostname: rabbit1
+  ports:
+    - "4379:4369"
+    - "5671:5671"
+    - "5682:5672"
+    - "15671:15671"
+    - "15672:15672"
+  environment:
+    - RABBITMQ_DEFAULT_USER=user
+    - RABBITMQ_DEFAULT_PASS=123456
