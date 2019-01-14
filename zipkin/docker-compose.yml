@@ -1,9 +1,0 @@
-version: "2"
-services:
- zipkin:
-  image: armhf/java-jre:latest
-  volumes:
-   - ./app:/usr/share/app
-  ports:
-   - "9400:9400" 
-  command: java -jar /usr/share/app/zipkin.jar
