@@ -1,11 +1,9 @@
 rabbit1:
-  image: rabbitmq:management
-  hostname: rabbit1
+  image: cyrilix/rabbitmq-mqtt
+  hostname: rabbitmqtt
   ports:
-    - "4379:4369"
-    - "5671:5671"
-    - "5682:5672"
-    - "15671:15671"
+    - "1883:1883"
+    - "8883:8883"
     - "15672:15672"
   environment:
     - RABBITMQ_DEFAULT_USER=user
